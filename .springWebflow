@@ -4,8 +4,23 @@
 	<pluginVersion><![CDATA[3.8.1.201607290748-RELEASE]]></pluginVersion>
 	<configs>
 		<config>
-			<file>src/main/webapp/WEB-INF/spring/flow.xml</file>
-			<name><![CDATA[flow]]></name>
+			<file>src/main/webapp/WEB-INF/flows/pizza/pizza-flow.xml</file>
+			<name><![CDATA[pizza-flow]]></name>
+			<beans-config><![CDATA[1:BeansModel|2:PizzaFlow|3:src/main/resources/spring/application-config.xml]]></beans-config>
+		</config>
+		<config>
+			<file>src/main/webapp/WEB-INF/flows/pizza/customer/customer-flow.xml</file>
+			<name><![CDATA[customer-flow]]></name>
+			<beans-config><![CDATA[1:BeansModel|2:PizzaFlow|3:src/main/resources/spring/application-config.xml]]></beans-config>
+		</config>
+		<config>
+			<file>src/main/webapp/WEB-INF/flows/pizza/order/order-flow.xml</file>
+			<name><![CDATA[order-flow]]></name>
+			<beans-config><![CDATA[1:BeansModel|2:PizzaFlow|3:src/main/resources/spring/application-config.xml]]></beans-config>
+		</config>
+		<config>
+			<file>src/main/webapp/WEB-INF/flows/pizza/payment/payment-flow.xml</file>
+			<name><![CDATA[payment-flow]]></name>
 			<beans-config><![CDATA[1:BeansModel|2:PizzaFlow|3:src/main/resources/spring/application-config.xml]]></beans-config>
 		</config>
 	</configs>
